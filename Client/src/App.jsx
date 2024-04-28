@@ -60,6 +60,25 @@ export default function App() {
     window.open("https://tailwind-nft-sample.netlify.app/", "_blank");
   };
 
+  const handleGithubProject2Click = () => {
+    window.open(
+      "https://github.com/LuanDHV/MERN-Stack-Project-Ecommerce",
+      "_blank"
+    );
+  };
+
+  const handleDemoProject2Click = () => {
+    window.open("https://nemfashion.netlify.app/", "_blank");
+  };
+
+  const handleGithubProject3Click = () => {
+    window.open("https://github.com/LuanDHV/My-Portfolio", "_blank");
+  };
+
+  const handleDemoProject3Click = () => {
+    window.open("https://naulportfolio.netlify.app/", "_blank");
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -77,7 +96,10 @@ export default function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/send-email", formData);
+      await axios.post(
+        "https://naul-portfolio-server.onrender.com/send-email",
+        formData
+      );
       toast.success("Email sent successfully");
       console.log("Form data:", formData); // Kiểm tra dữ liệu trong form
       // Reset form bằng cách đặt lại State
@@ -587,7 +609,7 @@ export default function App() {
               <div className="text-[14px] font-bold text-primaryColor">
                 <button
                   className="uppercase hover:opacity-75"
-                  onClick={handleDemoProject1Click}
+                  onClick={handleDemoProject2Click}
                 >
                   Live Demo
                   <FontAwesomeIcon
@@ -597,7 +619,7 @@ export default function App() {
                 </button>
                 <button
                   className="uppercase hover:opacity-75 float-end"
-                  onClick={handleGithubProject1Click}
+                  onClick={handleGithubProject2Click}
                 >
                   See On Github
                   <FontAwesomeIcon
@@ -666,7 +688,7 @@ export default function App() {
               <div className="text-[14px] font-bold text-primaryColor">
                 <button
                   className="uppercase hover:opacity-75"
-                  onClick={handleDemoProject1Click}
+                  onClick={handleDemoProject3Click}
                 >
                   Live Demo
                   <FontAwesomeIcon
@@ -676,7 +698,7 @@ export default function App() {
                 </button>
                 <button
                   className="uppercase hover:opacity-75 float-end"
-                  onClick={handleGithubProject1Click}
+                  onClick={handleGithubProject3Click}
                 >
                   See On Github
                   <FontAwesomeIcon
