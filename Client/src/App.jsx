@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react"; // Import useState and useEffect hooks
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faUpRightFromSquare,
+  faArrowUp,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faGithub,
@@ -9,6 +13,7 @@ import {
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import smoothScroll from "smooth-scroll";
 
 import myAVT from "./assets/img/myAVT.png";
 import iconHTML from "./assets/img/html.png";
@@ -36,6 +41,11 @@ import myCV from "./assets/other/CV-DoanHuynhVuLuan.pdf";
 
 export default function App() {
   const [isMobile, setIsMobile] = useState(false); // Trạng thái để theo dõi xem thiết bị có phải là di động không
+  const [isVisible, setIsVisible] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   const handleLinkedInClick = () => {
     window.open("https://www.linkedin.com/in/luandhv", "_blank");
@@ -114,6 +124,26 @@ export default function App() {
   };
 
   useEffect(() => {
+    smoothScroll('a[href*="#"]', {
+      speed: 800, // Tốc độ cuộn (milliseconds)
+      speedAsDuration: true, // Sử dụng tốc độ như là thời gian của cuộn
+    });
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = document.documentElement.scrollTop;
+      setIsVisible(scrolled > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     // Hàm kiểm tra xem thiết bị có phải là di động không
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth <= 768); // Đặt trạng thái isMobile thành true nếu chiều rộng cửa sổ nhỏ hơn hoặc bằng 768px (điều chỉnh theo nhu cầu)
@@ -144,8 +174,8 @@ export default function App() {
       <section>
         <div
           className="
-            w-4/5 h-[75px] mx-auto leading-[75px]
-            xl:h-[95px] xl:leading-[95px]
+            w-4/5 h-[75px] mx-auto leading-[75px] 
+            xl:h-[95px] xl:bg-blackColor xl:leading-[95px]
             "
         >
           <span className="bebas-neue-font text-[28px] xl:text-[32px] text-textColor uppercase cursor-not-allowed">
@@ -183,7 +213,7 @@ export default function App() {
       <section>
         <div
           className="
-            w-4/5 h-auto mx-auto my-10
+            w-4/5 h-auto mx-auto mt-20 mb-10
             xl:grid grid-cols-2 xl:place-items-center
             "
         >
@@ -208,7 +238,7 @@ export default function App() {
                   manrope-font text-[14px] font-bold text-black uppercase 
                   xl:text-[16px]"
                 >
-                  Contact Me
+                  <a href="#contact">Contact Me</a>
                   <FontAwesomeIcon
                     icon={faUpRightFromSquare}
                     className="ml-2"
@@ -493,7 +523,10 @@ export default function App() {
                 NFT Landing Page
               </div>
               <div className="mb-5 text-[16px] text-textColor">
-                Build a landing page from the NFT&apos;s design website
+                Build a landing page from the NFT&apos;s design
+              </div>
+              <div className="mb-5 text-[16px] text-textColor">
+                Technology: Html, Css, Tailwind, Figma.
               </div>
               <div className="text-[16px] font-semibold uppercase text-whiteColor">
                 Project Info
@@ -508,13 +541,6 @@ export default function App() {
                 <span className="text-whiteColor">Role</span>
                 <span className="text-textColor float-end">
                   Front-end Developer
-                </span>
-              </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
-                <span className="text-whiteColor">Technology</span>
-                <span className="text-textColor float-end">
-                  Html, Css, Tailwind, Figma
                 </span>
               </div>
               <hr className="w-full my-5 text-lineColor opacity-30" />
@@ -569,18 +595,23 @@ export default function App() {
               </div>
               <div className="mb-5 text-[16px] text-textColor">
                 <p>
-                  This project provides user features such as registration,
-                  login, password reset via OTP sent to email, viewing personal
-                  account information, tracking order status, viewing product
-                  details, adding/removing products from the cart, adjusting
-                  product quantities in the cart, place orders and complete
-                  payments, and receiving order confirmation emails.
+                  This project provides user functionalities such as
+                  registration, login, password reset via OTP sent to email,
+                  viewing personal account information, tracking order status,
+                  viewing product details, adding/removing products from the
+                  cart, adjusting product quantities in the cart, placing
+                  orders, completing payments, and receiving order confirmation
+                  emails. Administrators can monitor revenue, manage order
+                  statuses, and perform basic management operations such as CRUD
+                  for products, orders, and accounts.
                 </p>
-                <br></br>
-                Administrators can monitor revenue, manage order statuses, and
-                perform basic management operations such as CRUD for products,
-                orders, and accounts.
               </div>
+              <div className="mb-5 text-[16px] text-textColor">
+                Technology: ReactJS( Hooks, ReactDOM, React Toastify), Redux
+                Toolkit, Tailwind, NodeJS, ExpressJS, MongoDB, Axios, MVC,
+                Postman, RESTful API, etc.
+              </div>
+
               <div className="text-[16px] font-semibold uppercase text-whiteColor">
                 Project Info
               </div>
@@ -596,13 +627,6 @@ export default function App() {
                 <span className="text-whiteColor">Role</span>
                 <span className="text-textColor float-end">
                   Fullstack Developer
-                </span>
-              </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
-                <span className="text-whiteColor">Technology</span>
-                <span className="text-textColor float-end">
-                  MERN Stack, Redux-Toolkit, Tailwind ...
                 </span>
               </div>
               <hr className="w-full my-5 text-lineColor opacity-30" />
@@ -662,6 +686,10 @@ export default function App() {
                 professional and easy-to-read workspace, it is also responsive
                 for many devices.
               </div>
+              <div className="mb-5 text-[16px] text-textColor">
+                Technology: Html, Css, Tailwind, ReactJS, NodeJS, ExpressJS,
+                Nodemailer, Figma, Postman.
+              </div>
               <div className="text-[16px] font-semibold uppercase text-whiteColor">
                 Project Info
               </div>
@@ -675,13 +703,6 @@ export default function App() {
                 <span className="text-whiteColor">Role</span>
                 <span className="text-textColor float-end">
                   Front-end Developer
-                </span>
-              </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
-                <span className="text-whiteColor">Technology</span>
-                <span className="text-textColor float-end">
-                  Reactjs, Tailwind, Figma, Postman
                 </span>
               </div>
               <hr className="w-full my-5 text-lineColor opacity-30" />
@@ -840,6 +861,15 @@ export default function App() {
           </form>
         </div>
       </section>
+      {isVisible && (
+        <button
+          id="scrollToTopButton"
+          onClick={scrollToTop}
+          className="w-[48px] h-[48px] fixed text-lg bg-buttonBlack  text-primaryColor bottom-10 right-5 rounded-full hover:opacity-70 duration-300 ease-in-out"
+        >
+          <FontAwesomeIcon icon={faArrowUp} />
+        </button>
+      )}
     </>
   );
 }
