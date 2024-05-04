@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"; // Import useState and useEffect hooks
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
   faUpRightFromSquare,
   faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
@@ -184,7 +183,7 @@ export default function App() {
           {/* Render điều kiện: Chỉ hiển thị biểu tượng trên điện thoại di động */}
           {isMobile ? (
             <span className="text-textColor text-[24px] float-end cursor-pointer">
-              <FontAwesomeIcon icon={faBars} />
+              {/* <FontAwesomeIcon icon={faBars} /> */}
             </span>
           ) : (
             <div className="inter-font font-medium float-end ">
