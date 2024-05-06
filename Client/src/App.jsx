@@ -66,7 +66,7 @@ export default function App() {
   };
 
   const handleDemoProject1Click = () => {
-    window.open("https://tailwind-nft-sample.netlify.app/", "_blank");
+    window.open("https://nftsdesign.netlify.app/", "_blank");
   };
 
   const handleGithubProject2Click = () => {
@@ -212,7 +212,7 @@ export default function App() {
       <section>
         <div
           className="
-            w-4/5 h-auto mx-auto mt-20 mb-10
+            w-4/5 h-auto mx-auto my-10
             xl:grid grid-cols-2 xl:place-items-center
             "
         >
@@ -522,7 +522,10 @@ export default function App() {
                 NFT Landing Page
               </div>
               <div className="mb-5 text-[16px] text-textColor">
-                Build a landing page from the NFT&apos;s design
+                This project build a landing page from the NFTs design. Focus on
+                uniqueness using the right colors and fonts creates a
+                professional and easy to read workspace, and it also
+                demonstrates my abilities with tailwind
               </div>
               <div className="mb-5 text-[16px] text-textColor">
                 Technology: Html, Css, Tailwind, Figma.
@@ -533,7 +536,7 @@ export default function App() {
               <hr className="w-full my-5 text-lineColor opacity-30" />
               <div className="text-[16px]">
                 <span className="text-whiteColor">Year</span>
-                <span className="text-textColor float-end">12/2023</span>
+                <span className="text-textColor float-end">11/2023</span>
               </div>
               <hr className="w-full my-5 text-lineColor opacity-30" />
               <div className="text-[16px]">
@@ -594,21 +597,15 @@ export default function App() {
               </div>
               <div className="mb-5 text-[16px] text-textColor">
                 <p>
-                  This project provides user functionalities such as
-                  registration, login, password reset via OTP sent to email,
-                  viewing personal account information, tracking order status,
-                  viewing product details, adding/removing products from the
-                  cart, adjusting product quantities in the cart, placing
-                  orders, completing payments, and receiving order confirmation
-                  emails. Administrators can monitor revenue, manage order
-                  statuses, and perform basic management operations such as CRUD
-                  for products, orders, and accounts.
+                  This project is built on the theme of e-commerce fashion to
+                  provide full user interaction features such as viewing,
+                  ordering, payment, confirmation, etc. In addition, the project
+                  also provides other Features help administrators conveniently
+                  manage
                 </p>
               </div>
               <div className="mb-5 text-[16px] text-textColor">
-                Technology: ReactJS( Hooks, ReactDOM, React Toastify), Redux
-                Toolkit, Tailwind, NodeJS, ExpressJS, MongoDB, Axios, MVC,
-                Postman, RESTful API, etc.
+              ReactJS, Redux Toolkit, Tailwind, NodeJS, ExpressJS, Mongodb, Postman, etc. 
               </div>
 
               <div className="text-[16px] font-semibold uppercase text-whiteColor">
@@ -682,7 +679,7 @@ export default function App() {
                 This project built to introduce myself, my skills and completed
                 projects. With a focus on simplicity, best user experience and
                 aesthetics. Use appropriate colors and fonts to create a
-                professional and easy-to-read workspace, it is also responsive
+                professional and easy to read workspace, it is also responsive
                 for many devices.
               </div>
               <div className="mb-5 text-[16px] text-textColor">
@@ -695,7 +692,9 @@ export default function App() {
               <hr className="w-full my-5 text-lineColor opacity-30" />
               <div className="text-[16px]">
                 <span className="text-whiteColor">Year</span>
-                <span className="text-textColor float-end">2023</span>
+                <span className="text-textColor float-end">
+                  04/2024 - 05/2024
+                </span>
               </div>
               <hr className="w-full my-5 text-lineColor opacity-30" />
               <div className="text-[16px]">
