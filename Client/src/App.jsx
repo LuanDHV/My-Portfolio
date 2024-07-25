@@ -105,10 +105,7 @@ export default function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        "https://naul-portfolio-server.onrender.com/send-email",
-        formData
-      );
+      await axios.post("http://localhost:8080/send-email", formData);
       toast.success("Email sent successfully");
       console.log("Form data:", formData); // Kiểm tra dữ liệu trong form
       // Reset form bằng cách đặt lại State
@@ -605,7 +602,8 @@ export default function App() {
                 </p>
               </div>
               <div className="mb-5 text-[16px] text-textColor">
-              ReactJS, Redux Toolkit, Tailwind, NodeJS, ExpressJS, Mongodb, Postman, etc. 
+                ReactJS, Redux Toolkit, Tailwind, NodeJS, ExpressJS, Mongodb,
+                Postman, etc.
               </div>
 
               <div className="text-[16px] font-semibold uppercase text-whiteColor">
