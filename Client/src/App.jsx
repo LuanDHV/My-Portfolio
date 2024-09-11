@@ -61,7 +61,7 @@ export default function App() {
   const handleGithubProject1Click = () => {
     window.open(
       "https://github.com/LuanDHV/TailwindCSS-NFT-Practice",
-      "_blank"
+      "_blank",
     );
   };
 
@@ -72,7 +72,7 @@ export default function App() {
   const handleGithubProject2Click = () => {
     window.open(
       "https://github.com/LuanDHV/MERN-Stack-Project-Ecommerce",
-      "_blank"
+      "_blank",
     );
   };
 
@@ -167,73 +167,53 @@ export default function App() {
         pauseOnHover
         theme="light"
       />
-      <section>
-        <div
-          className="
-            w-4/5 h-[75px] mx-auto leading-[75px] 
-            xl:h-[95px] xl:bg-blackColor xl:leading-[95px]
-            "
-        >
-          <span className="bebas-neue-font text-[28px] xl:text-[32px] text-textColor uppercase cursor-not-allowed">
+
+      <section className="h-screen">
+        <div className="mx-auto flex h-20 w-4/5 items-center justify-between xl:bg-blackColor">
+          <span className="bebas-neue-font cursor-not-allowed text-3xl uppercase text-textColor xl:text-4xl">
             My Portfolio
           </span>
           {/* Render điều kiện: Chỉ hiển thị biểu tượng trên điện thoại di động */}
           {isMobile ? (
-            <span className="text-textColor text-[24px] float-end cursor-pointer">
+            <span className="float-end cursor-pointer text-[24px] text-textColor">
               {/* <FontAwesomeIcon icon={faBars} /> */}
             </span>
           ) : (
-            <div className="inter-font font-medium float-end ">
+            <div className="inter-font float-end font-medium">
               <a
                 href="#techstack"
-                className="mx-4 text-textColor text-[16px] cursor-pointer hover:opacity-75 duration-300"
+                className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
               >
                 Tech Stack
               </a>
               <a
                 href="#projects"
-                className="mx-4 text-textColor text-[16px] cursor-pointer hover:opacity-75 duration-300"
+                className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
               >
                 Projects
               </a>
               <a
                 href="#contact"
-                className="mx-4 text-textColor text-[16px] cursor-pointer hover:opacity-75 duration-300"
+                className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
               >
                 Contact
               </a>
             </div>
           )}
         </div>
-      </section>
-      <section>
-        <div
-          className="
-            w-4/5 h-auto mx-auto my-10
-            xl:grid grid-cols-2 xl:place-items-center
-            "
-        >
+        <div className="mx-auto my-5 h-auto w-4/5 grid-cols-2 items-center gap-10 xl:grid">
           <div className="">
-            <div className="bebas-neue-font text-whiteColor text-[40px] xl:text-[100px]">
+            <div className="bebas-neue-font text-5xl text-whiteColor xl:text-7xl">
               <div className="">Hi, I Am</div>
               <div className="">Doan Huynh Vu Luan.</div>
             </div>
-            <span className="manrope-font text-textColor text-[16px] xl:text-[18px]">
+            <span className="manrope-font text-base text-textColor xl:text-lg">
               A front-end developer passionate about building accessible and
               user friendly websites.
             </span>
             <div className="my-10">
-              <button
-                className="
-                w-[150px] h-[45px] rounded-full bg-primaryColor hover:opacity-75 duration-300
-                xl:w-[180px] xl:h-[55px]
-                "
-              >
-                <span
-                  className="
-                  manrope-font text-[14px] font-bold text-black uppercase 
-                  xl:text-[16px]"
-                >
+              <button className="h-[45px] w-[140px] rounded-full bg-primaryColor duration-300 hover:opacity-75 xl:h-[55px] xl:w-[180px]">
+                <span className="manrope-font text-sm font-bold uppercase text-black xl:text-base">
                   <a href="#contact">Contact Me</a>
                   <FontAwesomeIcon
                     icon={faUpRightFromSquare}
@@ -242,10 +222,7 @@ export default function App() {
                 </span>
               </button>
               <button
-                className="
-                  w-[48px] h-[48px] ml-4 rounded-full bg-buttonBlack hover:opacity-75 duration-300
-                  xl:w-[54px] xl:h-[54px] xl:text-[16px]
-                  "
+                className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-[54px] xl:w-[54px] xl:text-base"
                 onClick={handleLinkedInClick}
               >
                 <FontAwesomeIcon
@@ -254,10 +231,7 @@ export default function App() {
                 />
               </button>
               <button
-                className="
-                  w-[48px] h-[48px] ml-4 rounded-full bg-buttonBlack hover:opacity-75 duration-300
-                  xl:w-[54px] xl:h-[54px] xl:text-[16px]
-                  "
+                className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-[54px] xl:w-[54px] xl:text-base"
                 onClick={handleGithubClick}
               >
                 <FontAwesomeIcon
@@ -267,205 +241,111 @@ export default function App() {
               </button>
             </div>
           </div>
-
-          <div className="mb-10">
-            <img
-              src={myAVT}
-              alt="myAVT"
-              className="
-                w-full h-full object-cover rounded-lg
-                xl:w-[600px] xl:h-[800px]
-                "
-            />
+          <div className="">
+            <img src={myAVT} alt="myAVT" className="rounded-2xl object-cover" />
           </div>
         </div>
       </section>
+
       <hr className="w-full text-lineColor opacity-30" />
+
       <section id="techstack">
-        <div
-          className="
-          w-4/5 h-auto mx-auto 
-          xl:grid xl:grid-cols-2
-          "
-        >
+        <div className="mx-auto h-screen w-4/5 xl:grid xl:grid-cols-2">
           <div className="self-center">
-            <div
-              className="
-              bebas-neue-font mt-10 text-[40px] text-whiteColor
-              xl:text-[70px]
-              "
-            >
+            <div className="bebas-neue-font mt-10 text-5xl text-whiteColor xl:text-7xl">
               My Tech Stack
             </div>
-            <div
-              className="
-              manrope-font text-[16px] text-textColor
-              xl:text-[18px]
-              "
-            >
+            <div className="manrope-font text-base text-textColor xl:text-lg">
               Technologies I’ve been working with recently
             </div>
           </div>
-          <div
-            className="
-            grid grid-rows-4 my-10
-            xl:my-20
-            "
-          >
-            <div
-              className="
-              mb-5 grid grid-cols-4 place-items-center
-              xl:mb-10
-              "
-            >
+          <div className="my-10 grid grid-rows-4 xl:my-20">
+            <div className="mb-5 grid grid-cols-4 place-items-center xl:mb-10">
               <img
                 src={iconHTML}
                 alt="iconHTML"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconCSS}
                 alt="iconCSS"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconJS}
                 alt="iconJS"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconREACT}
                 alt="iconREACT"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
             </div>
-            <div
-              className="
-              mb-5 grid grid-cols-4 place-items-center
-              xl:mb-10
-              "
-            >
+            <div className="mb-5 grid grid-cols-4 place-items-center xl:mb-10">
               <img
                 src={iconREDUX}
                 alt="iconREDUX"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconGIT}
                 alt="iconGIT"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconTAILWIND}
                 alt="iconTAILWIND"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconSASS}
                 alt="iconSASS"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
             </div>
-            <div
-              className="
-              mb-5 grid grid-cols-4 place-items-center
-              xl:mb-10
-              "
-            >
+            <div className="mb-5 grid grid-cols-4 place-items-center xl:mb-10">
               <img
                 src={iconANTD}
                 alt="iconANTD}"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconMUI}
                 alt="iconMUI"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconNODEJS}
                 alt="iconNODEJS"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconMONGODB}
                 alt="iconMONGODB"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
             </div>
-            <div
-              className="
-              mb-5 grid grid-cols-4 place-items-center
-              xl:mb-10
-              "
-            >
+            <div className="mb-5 grid grid-cols-4 place-items-center xl:mb-10">
               <img
                 src={iconMYSQL}
                 alt="iconMYSQL"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconFIGMA}
                 alt="iconFIGMA"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconPOSTMAN}
                 alt="iconPOSTMAN"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
               <img
                 src={iconNETLIFY}
                 alt="iconNETLIFY"
-                className="
-                w-[35x] h-[35px] 
-                xl:w-[80px] xl:h-[80px]
-                "
+                className="h-[35px] w-[35x] xl:h-[80px] xl:w-[80px]"
               />
             </div>
           </div>
@@ -473,77 +353,54 @@ export default function App() {
       </section>
       <hr className="w-full text-lineColor opacity-30" />
       <section id="projects">
-        <div className="w-4/5 h-auto mx-auto my-10">
+        <div className="mx-auto my-10 h-auto w-4/5">
           <div className="xl:w-[600px]">
-            <div
-              className="
-              bebas-neue-font text-[40px] text-whiteColor
-              xl:text-[70px]
-              "
-            >
+            <div className="bebas-neue-font text-5xl text-whiteColor xl:text-7xl">
               Featured Projects
             </div>
-            <div
-              className="
-                manrope-font mb-10 text-[16px] text-textColor
-                xl:text-[18px]
-                "
-            >
+            <div className="manrope-font mb-10 text-base text-textColor xl:text-lg">
               Here are some of the selected projects that showcase my passion
               for front-end development.
             </div>
           </div>
-          <div
-            className="
-              manrope-font text-pretty
-              xl:grid grid-cols-2
-              "
-          >
-            <div
-              className="
-                w-full h-[350px] mx-auto px-4 py-6 rounded-lg bg-projectColor
-                xl:p-10 xl:h-[600px]
-                "
-            >
+          <div className="manrope-font grid-cols-2 text-pretty xl:grid">
+            <div className="mx-auto h-[350px] w-full rounded-lg bg-projectColor px-4 py-6 xl:h-[600px] xl:p-10">
               <img
                 src={myProject1}
                 alt="myProject1"
-                className="
-                  w-full h-full object-cover object-top rounded-t-lg
-                  xl:rounded-lg xl:h-full xl:mx-auto
-                  "
+                className="h-full w-full rounded-t-lg object-cover object-top xl:mx-auto xl:h-full xl:rounded-lg"
               />
             </div>
             <div className="xl:p-10">
               <div className="my-5 text-[24px] font-medium text-whiteColor">
                 NFT Landing Page
               </div>
-              <div className="mb-5 text-[16px] text-textColor">
+              <div className="mb-5 text-base text-textColor">
                 This project build a landing page from the NFTs design. Focus on
                 uniqueness using the right colors and fonts creates a
                 professional and easy to read workspace, and it also
                 demonstrates my abilities with tailwind
               </div>
-              <div className="mb-5 text-[16px] text-textColor">
+              <div className="mb-5 text-base text-textColor">
                 Technology: Html, Css, Tailwind, Figma.
               </div>
-              <div className="text-[16px] font-semibold uppercase text-whiteColor">
+              <div className="text-base font-semibold uppercase text-whiteColor">
                 Project Info
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-base">
                 <span className="text-whiteColor">Year</span>
-                <span className="text-textColor float-end">11/2023</span>
+                <span className="float-end text-textColor">11/2023</span>
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-base">
                 <span className="text-whiteColor">Role</span>
-                <span className="text-textColor float-end">
+                <span className="float-end text-textColor">
                   Front-end Developer
                 </span>
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[14px] font-bold text-primaryColor">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-sm font-bold text-primaryColor">
                 <button
                   className="uppercase hover:opacity-75"
                   onClick={handleDemoProject1Click}
@@ -551,48 +408,32 @@ export default function App() {
                   Live Demo
                   <FontAwesomeIcon
                     icon={faUpRightFromSquare}
-                    className="ml-2 text-[16px]"
+                    className="ml-2 text-base"
                   />
                 </button>
                 <button
-                  className="uppercase hover:opacity-75 float-end"
+                  className="float-end uppercase hover:opacity-75"
                   onClick={handleGithubProject1Click}
                 >
                   See On Github
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="ml-2 text-[16px]"
-                  />
+                  <FontAwesomeIcon icon={faGithub} className="ml-2 text-base" />
                 </button>
               </div>
             </div>
           </div>
-          <div
-            className="
-              manrope-font mt-20 text-pretty 
-              xl:grid grid-cols-2
-              "
-          >
-            <div
-              className="
-                w-full h-[350px] mx-auto px-4 py-6 rounded-lg bg-projectColor
-                xl:p-10 xl:h-[600px]
-                "
-            >
+          <div className="manrope-font mt-20 grid-cols-2 text-pretty xl:grid">
+            <div className="mx-auto h-[350px] w-full rounded-lg bg-projectColor px-4 py-6 xl:h-[600px] xl:p-10">
               <img
                 src={myProject2}
                 alt="myProject2"
-                className="
-                  w-full h-full object-cover object-top rounded-t-lg
-                  xl:rounded-lg xl:h-full xl:mx-auto
-                  "
+                className="h-full w-full rounded-t-lg object-cover object-top xl:mx-auto xl:h-full xl:rounded-lg"
               />
             </div>
             <div className="xl:p-10">
               <div className="my-5 text-[24px] font-medium text-whiteColor">
                 Fashion E-commerce
               </div>
-              <div className="mb-5 text-[16px] text-textColor">
+              <div className="mb-5 text-base text-textColor">
                 <p>
                   This project is built on the theme of e-commerce fashion to
                   provide full user interaction features such as viewing,
@@ -601,30 +442,30 @@ export default function App() {
                   manage
                 </p>
               </div>
-              <div className="mb-5 text-[16px] text-textColor">
+              <div className="mb-5 text-base text-textColor">
                 ReactJS, Redux Toolkit, Tailwind, NodeJS, ExpressJS, Mongodb,
                 Postman, etc.
               </div>
 
-              <div className="text-[16px] font-semibold uppercase text-whiteColor">
+              <div className="text-base font-semibold uppercase text-whiteColor">
                 Project Info
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-base">
                 <span className="text-whiteColor">Year</span>
-                <span className="text-textColor float-end">
+                <span className="float-end text-textColor">
                   1/2024 - 4/2024
                 </span>
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-base">
                 <span className="text-whiteColor">Role</span>
-                <span className="text-textColor float-end">
+                <span className="float-end text-textColor">
                   Fullstack Developer
                 </span>
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[14px] font-bold text-primaryColor">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-sm font-bold text-primaryColor">
                 <button
                   className="uppercase hover:opacity-75"
                   onClick={handleDemoProject2Click}
@@ -632,77 +473,61 @@ export default function App() {
                   Live Demo
                   <FontAwesomeIcon
                     icon={faUpRightFromSquare}
-                    className="ml-2 text-[16px]"
+                    className="ml-2 text-base"
                   />
                 </button>
                 <button
-                  className="uppercase hover:opacity-75 float-end"
+                  className="float-end uppercase hover:opacity-75"
                   onClick={handleGithubProject2Click}
                 >
                   See On Github
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="ml-2 text-[16px]"
-                  />
+                  <FontAwesomeIcon icon={faGithub} className="ml-2 text-base" />
                 </button>
               </div>
             </div>
           </div>
-          <div
-            className="
-              manrope-font mt-20 text-pretty 
-              xl:grid grid-cols-2
-              "
-          >
-            <div
-              className="
-                w-full h-[350px] mx-auto px-4 py-6 rounded-lg bg-projectColor
-                xl:p-10 xl:h-[600px]
-                "
-            >
+          <div className="manrope-font mt-20 grid-cols-2 text-pretty xl:grid">
+            <div className="mx-auto h-[350px] w-full rounded-lg bg-projectColor px-4 py-6 xl:h-[600px] xl:p-10">
               <img
                 src={myProject3}
                 alt="myProject3"
-                className="
-                  w-full h-full object-cover object-top rounded-t-lg
-                  xl:rounded-lg xl:h-full xl:mx-auto
-                  "
+                className="h-full w-full rounded-t-lg object-cover object-top xl:mx-auto xl:h-full xl:rounded-lg"
               />
             </div>
             <div className="xl:p-10">
               <div className="my-5 text-[24px] font-medium text-whiteColor">
                 My Frontend Developer Portfolio
               </div>
-              <div className="mb-5 text-[16px] text-textColor">
+              <div className="mb-5 text-base text-textColor">
                 This project built to introduce myself, my skills and completed
                 projects. With a focus on simplicity, best user experience and
                 aesthetics. Use appropriate colors and fonts to create a
                 professional and easy to read workspace, it is also responsive
                 for many devices.
               </div>
-              <div className="mb-5 text-[16px] text-textColor">
+              <div className="mb-5 text-base text-textColor">
                 Technology: Html, Css, Tailwind, ReactJS, NodeJS, ExpressJS,
                 Nodemailer, Figma, Postman.
               </div>
-              <div className="text-[16px] font-semibold uppercase text-whiteColor">
+              <div className="text-base font-semibold uppercase text-whiteColor">
                 Project Info
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-base">
                 <span className="text-whiteColor">Year</span>
-                <span className="text-textColor float-end">
+                <span className="float-end text-textColor">
                   04/2024 - 05/2024
                 </span>
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[16px]">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-base">
                 <span className="text-whiteColor">Role</span>
-                <span className="text-textColor float-end">
+                <span className="float-end text-textColor">
                   Front-end Developer
                 </span>
               </div>
-              <hr className="w-full my-5 text-lineColor opacity-30" />
-              <div className="text-[14px] font-bold text-primaryColor">
+              <hr className="my-5 w-full text-lineColor opacity-30" />
+              <div className="text-sm font-bold text-primaryColor">
                 <button
                   className="uppercase hover:opacity-75"
                   onClick={handleDemoProject3Click}
@@ -710,18 +535,15 @@ export default function App() {
                   Live Demo
                   <FontAwesomeIcon
                     icon={faUpRightFromSquare}
-                    className="ml-2 text-[16px]"
+                    className="ml-2 text-base"
                   />
                 </button>
                 <button
-                  className="uppercase hover:opacity-75 float-end"
+                  className="float-end uppercase hover:opacity-75"
                   onClick={handleGithubProject3Click}
                 >
                   See On Github
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    className="ml-2 text-[16px]"
-                  />
+                  <FontAwesomeIcon icon={faGithub} className="ml-2 text-base" />
                 </button>
               </div>
             </div>
@@ -730,44 +552,30 @@ export default function App() {
       </section>
       <hr className="w-full text-lineColor opacity-30" />
       <section id="contact">
-        <div className="w-4/5 h-auto mx-auto xl:grid xl:grid-cols-2">
+        <div className="mx-auto h-screen w-4/5 items-center xl:grid xl:grid-cols-2">
           <div className="">
-            <div
-              className="
-              bebas-neue-font mt-10 text-[40px] text-whiteColor
-              xl:text-[70px]
-              "
-            >
+            <div className="bebas-neue-font mt-10 text-5xl text-whiteColor xl:text-7xl">
               Let&apos;s Connect
             </div>
-            <div className="my-5 text-[16px] text-textColor">
+            <div className="my-5 text-base text-textColor">
               Say hello at
-              <p className="inline ml-1 text-primaryColor">
+              <p className="ml-1 inline text-primaryColor">
                 luandhv1406@gmail.com
               </p>
             </div>
-            <div className="my-5 text-[16px] text-textColor">
+            <div className="my-5 text-base text-textColor">
               For more infor, here&apos;s my
               <a
                 href={myCV}
                 download="CV-Doan Huynh Vu Luan.pdf"
-                className="underline ml-1 text-primaryColor"
+                className="ml-1 text-primaryColor underline"
               >
                 resume
               </a>
             </div>
-            <div
-              className="
-              grid grid-cols-3
-              my-10 text-[20px]
-              xl:flex xl:text-[25px]
-              "
-            >
+            <div className="my-10 grid grid-cols-3 text-[20px] xl:flex xl:text-[25px]">
               <button
-                className="
-                w-[48px] h-[48px] rounded-full bg-buttonBlack hover:opacity-75 duration-300
-                xl:w-[54px] xl:h-[54px] xl:text-[16px]
-                "
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-[54px] xl:w-[54px] xl:text-base"
                 onClick={handleLinkedInClick}
               >
                 <FontAwesomeIcon
@@ -776,10 +584,7 @@ export default function App() {
                 />
               </button>
               <button
-                className="
-                w-[48px] h-[48px] rounded-full bg-buttonBlack hover:opacity-75 duration-300
-                xl:w-[54px] xl:h-[54px] xl:text-[16px] xl:ml-10
-                "
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-[54px] xl:w-[54px] xl:text-base"
                 onClick={handleGithubClick}
               >
                 <FontAwesomeIcon
@@ -788,10 +593,7 @@ export default function App() {
                 />
               </button>
               <button
-                className="
-                w-[48px] h-[48px] rounded-full bg-buttonBlack hover:opacity-75 duration-300
-                xl:w-[54px] xl:h-[54px] xl:text-[16px] xl:ml-10
-                "
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-[54px] xl:w-[54px] xl:text-base"
                 onClick={handleFacebookClick}
               >
                 <FontAwesomeIcon
@@ -803,7 +605,7 @@ export default function App() {
           </div>
           <form onSubmit={handleSubmit} className="manrope-font xl:p-10">
             <div>
-              <label htmlFor="name" className="text-[16px] text-textColor">
+              <label htmlFor="name" className="text-base text-textColor">
                 Name
               </label>
               <br />
@@ -813,11 +615,11 @@ export default function App() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full h-[45px] mt-4 px-4 rounded text-[16px] text-textColor bg-projectColor outline-none"
+                className="mt-4 h-[45px] w-full rounded bg-projectColor px-4 text-base text-textColor outline-none"
               />
             </div>
             <div className="mt-4">
-              <label htmlFor="email" className="text-[16px] text-textColor">
+              <label htmlFor="email" className="text-base text-textColor">
                 Email:
               </label>
               <br />
@@ -827,11 +629,11 @@ export default function App() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full h-[45px] mt-4 px-4 rounded text-[16px] text-textColor bg-projectColor outline-none"
+                className="mt-4 h-[45px] w-full rounded bg-projectColor px-4 text-base text-textColor outline-none"
               />
             </div>
             <div className="mt-4">
-              <label htmlFor="message" className="text-[16px] text-textColor">
+              <label htmlFor="message" className="text-base text-textColor">
                 Message:
               </label>
               <br />
@@ -842,15 +644,12 @@ export default function App() {
                 onChange={handleChange}
                 rows="4"
                 cols="50"
-                className="w-full h-[150px] mt-4 p-4 rounded text-[16px] text-textColor bg-projectColor outline-none"
+                className="mt-4 h-[150px] w-full rounded bg-projectColor p-4 text-base text-textColor outline-none"
               />
             </div>
             <button
               type="submit"
-              className="
-              manrope-font font-bold my-10 w-[140px] h-[55px] text-[16px] text-blackColor bg-primaryColor rounded-full hover:opacity-75 duration-300
-              xl:mt-20
-              "
+              className="manrope-font my-10 h-[55px] w-[140px] rounded-full bg-primaryColor text-base font-bold text-blackColor duration-300 hover:opacity-75 xl:mt-20"
             >
               Submit
             </button>
@@ -861,7 +660,7 @@ export default function App() {
         <button
           id="scrollToTopButton"
           onClick={scrollToTop}
-          className="w-[48px] h-[48px] fixed text-lg bg-buttonBlack  text-primaryColor bottom-10 right-5 rounded-full hover:opacity-70 duration-300 ease-in-out"
+          className="fixed bottom-10 right-5 h-12 w-12 rounded-full bg-buttonBlack text-lg text-primaryColor duration-300 ease-in-out hover:opacity-70"
         >
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
