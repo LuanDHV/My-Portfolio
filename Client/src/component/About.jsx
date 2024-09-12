@@ -70,7 +70,7 @@ export default function About() {
                 </span>
               </button>
               <button
-                className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-[54px] xl:w-[54px] xl:text-base"
+                className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleLinkedInClick}
               >
                 <FontAwesomeIcon
@@ -79,7 +79,7 @@ export default function About() {
                 />
               </button>
               <button
-                className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-[54px] xl:w-[54px] xl:text-base"
+                className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleGithubClick}
               >
                 <FontAwesomeIcon

@@ -68,7 +68,7 @@ export default function Contact() {
         pauseOnHover
         theme="light"
       />
-      <section id="contact" className="h-auto xl:h-screen">
+      <section id="contact" className="flex h-auto items-center xl:h-screen">
         <div className="mx-auto w-4/5 items-center xl:grid xl:grid-cols-2">
           <div className="">
             <div className="bebas-neue-font mt-10 text-5xl text-whiteColor xl:text-7xl">
@@ -90,9 +90,9 @@ export default function Contact() {
                 resume
               </a>
             </div>
-            <div className="my-10 grid grid-cols-3 text-[20px] xl:flex xl:text-[25px]">
+            <div className="my-10 grid grid-cols-3 text-xl xl:flex xl:text-2xl">
               <button
-                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-[54px] xl:w-[54px] xl:text-base"
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleLinkedInClick}
               >
                 <FontAwesomeIcon
@@ -101,7 +101,7 @@ export default function Contact() {
                 />
               </button>
               <button
-                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-[54px] xl:w-[54px] xl:text-base"
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleGithubClick}
               >
                 <FontAwesomeIcon
@@ -110,7 +110,7 @@ export default function Contact() {
                 />
               </button>
               <button
-                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-[54px] xl:w-[54px] xl:text-base"
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleFacebookClick}
               >
                 <FontAwesomeIcon
