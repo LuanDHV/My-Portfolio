@@ -13,13 +13,13 @@ export default function About() {
   };
   return (
     <>
-      <section id="about" className="h-screen">
+      <section id="about" className="h-auto xl:h-screen">
         <div className="mx-auto flex h-20 w-4/5 items-center justify-between xl:bg-blackColor">
           <span className="bebas-neue-font cursor-not-allowed text-3xl uppercase text-textColor xl:text-4xl">
             My Portfolio
           </span>
 
-          <div className="inter-font float-end font-medium">
+          <div className="inter-font float-end hidden font-medium xl:block">
             <a
               href="#about"
               className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
@@ -46,15 +46,18 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="mx-auto my-5 h-auto w-4/5 grid-cols-2 items-center gap-10 xl:grid">
-          <div className="">
-            <div className="bebas-neue-font text-5xl text-whiteColor xl:text-7xl">
+
+        <div className="mx-auto my-5 flex h-auto w-4/5 flex-col items-center gap-5 xl:flex-row">
+          <div className="w-full">
+            <div className="bebas-neue-font mb-5 text-5xl text-whiteColor xl:text-7xl">
               <div className="">Hi, I Am</div>
               <div className="">Doan Huynh Vu Luan.</div>
             </div>
             <span className="manrope-font text-base text-textColor xl:text-lg">
-              A front-end developer passionate about building accessible and
-              user friendly websites.
+              I am a dedicated frontend developer actively seeking opportunities
+              that align with my goal of becoming a fullstack developer. I am
+              committed to making meaningful contributions and continuously
+              expanding my skills.
             </span>
             <div className="my-10">
               <button className="h-[45px] w-[140px] rounded-full bg-primaryColor duration-300 hover:opacity-75 xl:h-[55px] xl:w-[180px]">
@@ -86,7 +89,7 @@ export default function About() {
               </button>
             </div>
           </div>
-          <div className="">
+          <div className="w-full">
             <img src={myAVT} alt="myAVT" className="rounded-2xl object-cover" />
           </div>
         </div>

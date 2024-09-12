@@ -4,8 +4,8 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import smoothScroll from "smooth-scroll";
 import About from "./component/About";
 import TechStack from "./component/TechStack";
-import Contact from "./component/Contact";
 import Projects from "./component/Projects";
+import Contact from "./component/Contact";
 
 export default function App() {
   const [isVisible, setIsVisible] = useState(false);
