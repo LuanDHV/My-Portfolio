@@ -13,40 +13,7 @@ export default function About() {
   };
   return (
     <>
-      <section id="about" className="h-auto xl:h-screen">
-        <div className="mx-auto flex h-20 w-4/5 items-center justify-between xl:bg-blackColor">
-          <span className="bebas-neue-font cursor-not-allowed text-3xl uppercase text-textColor xl:text-4xl">
-            My Portfolio
-          </span>
-
-          <div className="inter-font float-end hidden font-medium xl:block">
-            <a
-              href="#about"
-              className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
-            >
-              About Me
-            </a>
-            <a
-              href="#techstack"
-              className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
-            >
-              Tech Stack
-            </a>
-            <a
-              href="#projects"
-              className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
-              className="mx-4 cursor-pointer text-base text-textColor duration-300 hover:opacity-75"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-
+      <section id="about" className="flex h-auto items-center xl:h-screen">
         <div className="mx-auto my-5 flex h-auto w-4/5 flex-col items-center gap-5 xl:flex-row">
           <div className="w-full">
             <div className="bebas-neue-font mb-5 text-5xl text-whiteColor xl:text-7xl">

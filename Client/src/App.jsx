@@ -6,6 +6,7 @@ import About from "./component/About";
 import TechStack from "./component/TechStack";
 import Projects from "./component/Projects";
 import Contact from "./component/Contact";
+import Header from "./component/Header";
 
 export default function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,6 +37,7 @@ export default function App() {
 
   return (
     <>
+      <Header />
       <About />
       <TechStack />
       <Projects />
