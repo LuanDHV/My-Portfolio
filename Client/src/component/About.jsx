@@ -14,7 +14,7 @@ export default function About() {
   return (
     <>
       <section id="about" className="flex h-auto items-center xl:h-screen">
-        <div className="mx-auto my-5 flex h-auto w-4/5 flex-col items-center gap-5 xl:flex-row">
+        <div className="mx-auto my-24 flex h-auto w-4/5 flex-col items-center gap-5 xl:my-10 xl:flex-row">
           <div className="w-full">
             <div className="bebas-neue-font mb-5 text-5xl text-whiteColor xl:text-7xl">
               <div className="">Hi, I Am</div>

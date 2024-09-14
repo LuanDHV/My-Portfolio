@@ -62,13 +62,13 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="manrope-font mt-20 grid-cols-2 text-pretty xl:grid"
+            className="manrope-font mt-20 grid-cols-2 items-center text-pretty xl:grid"
           >
-            <div className="mx-auto h-[350px] w-full rounded-lg bg-projectColor px-4 py-6 xl:h-[600px] xl:p-10">
+            <div className="mx-auto w-full rounded-lg bg-projectColor px-4 py-6">
               <img
                 src={project.imgSrc}
                 alt={`myProject${index + 1}`}
-                className="h-full w-full rounded-t-lg object-cover object-top xl:mx-auto xl:h-full xl:rounded-lg"
+                className="rounded-lg object-contain"
               />
             </div>
             <div className="xl:p-10">
