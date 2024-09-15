@@ -8,39 +8,40 @@ import myProject3 from "../assets/img/myProject3.png";
 export default function Projects() {
   const projects = [
     {
-      title: "NFT Landing Page",
+      title: "E-Learning Prep Clone",
       description:
-        "This project build a landing page from the NFTs design. Focus on uniqueness using the right colors and fonts creates a professional and easy to read workspace, and it also demonstrates my abilities with tailwind.",
-      technology: "Html, Css, Tailwind, Figma",
-      year: "11/2023",
-      role: "Front-end Developer",
+        "I developed a language learning web application that allows users to build personalized study pathways and take proficiency tests. The project aimed to provide an effective learning experience and convenient administrative tools.",
+      technology:
+        "TypeScript, React.js, Next.js, Tailwind CSS, Swiper, Node.js, Express.js, MongoDB, Clerk, ZaloPay, Postman",
+      year: "6/2024-9/2024",
+      role: "Fullstack Developer",
       imgSrc: myProject1,
-      githubLink: "https://github.com/LuanDHV/TailwindCSS-NFT-Practice",
-      demoLink: "https://nftsdesign.netlify.app/",
+      githubLink: "https://github.com/LuanDHV/Prep-Clone-NextTS",
+      demoLink: "",
     },
     {
       title: "Fashion E-commerce",
       description:
-        "This project is built on the theme of e-commerce fashion to provide full user interaction features such as viewing, ordering, payment, confirmation, etc. In addition, the project also provides other Features help administrators conveniently manage.",
+        "I built a fashion e-commerce web application using the MERN stack, following the MVC architecture, and integrating Redux Toolkit for state management. Additionally, I utilized Tailwind CSS for efficient styling and design. This project aimed to provide a great user experience and efficient administrative tools.",
       technology:
-        "ReactJS, Redux Toolkit, Tailwind, NodeJS, ExpressJS, Mongodb, Postman, etc.",
+        "React.js, Redux Toolkit, Tailwind CSS, Node.js, Express.js, Mongodb, Nodemailer, Postman",
       year: "1/2024 - 4/2024",
       role: "Fullstack Developer",
       imgSrc: myProject2,
       githubLink: "https://github.com/LuanDHV/MERN-Stack-Project-Ecommerce",
-      demoLink: "https://nemfashion.netlify.app/",
+      demoLink: "",
     },
     {
       title: "My Frontend Developer Portfolio",
       description:
         "This project built to introduce myself, my skills and completed projects. With a focus on simplicity, best user experience and aesthetics. Use appropriate colors and fonts to create a professional and easy to read workspace, it is also responsive for many devices.",
       technology:
-        "Html, Css, Tailwind, ReactJS, NodeJS, ExpressJS, Nodemailer, Figma, Postman",
+        "Html, Css, Tailwind CSS, React.js, Node.js, Express.js, Nodemailer, Figma, Postman",
       year: "04/2024 - 05/2024",
       role: "Front-end Developer",
       imgSrc: myProject3,
       githubLink: "https://github.com/LuanDHV/My-Portfolio",
-      demoLink: "https://naulportfolio.netlify.app/",
+      demoLink: "",
     },
   ];
 
