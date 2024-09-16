@@ -8,7 +8,7 @@ import {
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import myCV from "../assets/other/CV-DoanHuynhVuLuan.pdf";
+import myCV from "../assets/other/DoanHuynhVuLuanResume.pdf";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -84,7 +84,7 @@ export default function Contact() {
               For more infor, here&apos;s my
               <a
                 href={myCV}
-                download="CV-Doan Huynh Vu Luan.pdf"
+                download="DoanHuynhVuLuanResume.pdf"
                 className="ml-1 text-primaryColor underline"
               >
                 resume
