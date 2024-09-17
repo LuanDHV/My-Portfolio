@@ -90,7 +90,7 @@ export default function Contact() {
                 resume
               </a>
             </div>
-            <div className="my-10 grid grid-cols-3 text-xl xl:flex xl:text-2xl">
+            <div className="my-10 flex gap-10 text-xl xl:text-2xl">
               <button
                 className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleLinkedInClick}
@@ -101,7 +101,7 @@ export default function Contact() {
                 />
               </button>
               <button
-                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-14 xl:w-14 xl:text-base"
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleGithubClick}
               >
                 <FontAwesomeIcon
@@ -110,7 +110,7 @@ export default function Contact() {
                 />
               </button>
               <button
-                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:ml-10 xl:h-14 xl:w-14 xl:text-base"
+                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleFacebookClick}
               >
                 <FontAwesomeIcon
