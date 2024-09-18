@@ -13,9 +13,13 @@ export default function About() {
   };
   return (
     <>
-      <section id="about" className="flex h-auto items-center xl:h-screen">
+      <section
+        id="about"
+        data-aos="fade-down"
+        className="flex h-auto items-center overflow-hidden xl:h-screen"
+      >
         <div className="mx-auto my-24 flex h-auto w-4/5 flex-col items-center gap-5 xl:my-10 xl:flex-row">
-          <div className="w-full">
+          <div data-aos="fade-right" className="w-full">
             <div className="bebas-neue-font mb-5 text-5xl text-whiteColor xl:text-7xl">
               <div className="">Hi, I Am</div>
               <div className="">Doan Huynh Vu Luan.</div>
@@ -56,7 +60,7 @@ export default function About() {
               </button>
             </div>
           </div>
-          <div className="w-full">
+          <div data-aos="fade-left" className="w-full">
             <img src={myAVT} alt="myAVT" className="rounded-2xl object-cover" />
           </div>
         </div>

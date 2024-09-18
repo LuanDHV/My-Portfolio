@@ -68,9 +68,13 @@ export default function Contact() {
         pauseOnHover
         theme="light"
       />
-      <section id="contact" className="flex h-auto items-center xl:h-screen">
+      <section
+        id="contact"
+        data-aos="fade-down"
+        className="flex h-auto items-center overflow-hidden xl:h-screen"
+      >
         <div className="mx-auto w-4/5 items-center xl:grid xl:grid-cols-2">
-          <div className="">
+          <div data-aos="fade-right" className="">
             <div className="bebas-neue-font mt-10 text-5xl text-whiteColor xl:text-7xl">
               Let&apos;s Connect
             </div>
@@ -120,7 +124,11 @@ export default function Contact() {
               </button>
             </div>
           </div>
-          <form onSubmit={handleSubmit} className="manrope-font xl:p-10">
+          <form
+            data-aos="fade-left"
+            onSubmit={handleSubmit}
+            className="manrope-font xl:p-10"
+          >
             <div>
               <label htmlFor="name" className="text-base text-textColor">
                 Name

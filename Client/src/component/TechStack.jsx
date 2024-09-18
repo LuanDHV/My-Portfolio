@@ -37,9 +37,13 @@ export default function TechStack() {
 
   return (
     <>
-      <section id="techstack" className="flex h-auto items-center xl:h-screen">
+      <section
+        id="techstack"
+        data-aos="fade-down"
+        className="flex h-auto items-center overflow-hidden xl:h-screen"
+      >
         <div className="mx-auto grid w-4/5 xl:grid-cols-2">
-          <div className="self-center">
+          <div data-aos="fade-right" className="self-center">
             <div className="bebas-neue-font mt-10 text-5xl text-whiteColor xl:text-7xl">
               My Tech Stack
             </div>
@@ -47,7 +51,7 @@ export default function TechStack() {
               Technologies I’ve been working with recently
             </div>
           </div>
-          <div className="my-10 grid grid-rows-4 xl:my-20">
+          <div data-aos="fade-left" className="my-10 grid grid-rows-4 xl:my-20">
             {Array(4)
               .fill(0)
               .map((_, rowIndex) => (

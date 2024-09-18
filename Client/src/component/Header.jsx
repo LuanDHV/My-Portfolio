@@ -1,7 +1,10 @@
 export default function Header() {
   return (
     <>
-      <div className="fixed z-50 w-full bg-blackColor">
+      <div
+        data-aos="fade-down"
+        className="fixed z-50 w-full overflow-hidden bg-blackColor"
+      >
         <div className="mx-auto flex h-20 w-4/5 items-center justify-between">
           <span className="bebas-neue-font cursor-not-allowed text-3xl uppercase text-textColor xl:text-4xl">
             My Portfolio

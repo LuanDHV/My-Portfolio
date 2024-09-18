@@ -1,12 +1,14 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import smoothScroll from "smooth-scroll";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import smoothScroll from "smooth-scroll";
-import About from "./component/About";
 import TechStack from "./component/TechStack";
 import Projects from "./component/Projects";
 import Contact from "./component/Contact";
 import Header from "./component/Header";
+import About from "./component/About";
 
 export default function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,6 +21,14 @@ export default function App() {
     smoothScroll('a[href*="#"]', {
       speed: 800,
       speedAsDuration: true,
+    });
+  }, []);
+
+  // Khởi tạo AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
     });
   }, []);
 

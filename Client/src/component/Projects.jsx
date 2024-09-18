@@ -48,7 +48,11 @@ export default function Projects() {
   const openLink = (url) => window.open(url, "_blank");
 
   return (
-    <section id="projects" className="h-auto">
+    <section
+      id="projects"
+      data-aos="fade-up"
+      className="h-auto overflow-hidden"
+    >
       <div className="mx-auto my-10 w-4/5">
         <div className="xl:w-[600px]">
           <div className="bebas-neue-font text-5xl text-whiteColor xl:text-7xl">
@@ -63,6 +67,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
+            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             className="manrope-font mt-20 grid-cols-2 items-center text-pretty xl:grid"
           >
             <div className="mx-auto w-full rounded-lg bg-projectColor px-4 py-6">
