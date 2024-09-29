@@ -4,15 +4,16 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import myProject1 from "../assets/img/myProject1.png";
 import myProject2 from "../assets/img/myProject2.png";
 import myProject3 from "../assets/img/myProject3.png";
+import myProject4 from "../assets/img/myProject4.png";
 
 export default function Projects() {
   const projects = [
     {
       title: "E-Learning Prep Clone",
       description:
-        "I developed a language learning web application that allows users to build personalized study pathways and take proficiency tests. The project aimed to provide an effective learning experience and convenient administrative tools.",
+        "A language learning web application that allows users to build personalized study pathways. The project aimed to provide an effective learning experience and convenient tools.",
       technology:
-        "TypeScript, React.js, Next.js, Tailwind CSS, Swiper, Node.js, Express.js, MongoDB, Clerk, ZaloPay, Postman",
+        "TypeScript, React.js, Next.js, NextUI, Tailwind CSS, Swiper, Node.js, Express.js, MongoDB, Clerk, ZaloPay Payment.",
       year: "6/2024-9/2024",
       role: "Fullstack Developer",
       imgSrc: myProject1,
@@ -22,9 +23,9 @@ export default function Projects() {
     {
       title: "Fashion E-commerce",
       description:
-        "I built a fashion e-commerce web application using the MERN stack, following the MVC architecture, and integrating Redux Toolkit for state management. Additionally, I utilized Tailwind CSS for efficient styling and design. This project aimed to provide a great user experience and efficient administrative tools.",
+        "A fashion e-commerce web application using the MERN stack, following the MVC architecture, and integrating Redux Toolkit for state management. Additionally, I utilized Tailwind CSS for efficient styling and design.",
       technology:
-        "React.js, Redux Toolkit, Tailwind CSS, Node.js, Express.js, Mongodb, Nodemailer, Postman",
+        "React.js, Redux Toolkit, Tailwind CSS, Node.js, Express.js, MongoDB, Nodemailer.",
       year: "1/2024 - 4/2024",
       role: "Fullstack Developer",
       imgSrc: myProject2,
@@ -32,15 +33,27 @@ export default function Projects() {
       demoLink: "",
     },
     {
-      title: "My Frontend Developer Portfolio",
+      title: "My Web Developer Portfolio",
       description:
-        "This project built to introduce myself, my skills and completed projects. With a focus on simplicity, best user experience and aesthetics. Use appropriate colors and fonts to create a professional and easy to read workspace, it is also responsive for many devices.",
+        "A project built to introduce myself, my skills and completed projects. With a focus on simplicity, best user experience and aesthetics. Use appropriate colors and fonts to create a professional and easy to read workspace.",
       technology:
-        "Html, Css, Tailwind CSS, React.js, Node.js, Express.js, Nodemailer, Figma, Postman",
+        "React.js, Tailwind CSS, Node.js, Express.js, Nodemailer, AOS.",
       year: "04/2024 - 05/2024",
       role: "Front-end Developer",
       imgSrc: myProject3,
       githubLink: "https://github.com/LuanDHV/My-Portfolio",
+      demoLink: "",
+    },
+    {
+      title: "To Do List",
+      description:
+        "A To-Do List application built to enhance user experience and performance. The app allows users to efficiently manage their tasks with a clean and intuitive interface, featuring Light/Dark mode for a customizable user experience.",
+      technology:
+        "TypeScript, React.js, RTK Query, Tailwind CSS, Node.js, Express.js.",
+      year: "09/2024 - 09/2024",
+      role: "Fullstack Developer",
+      imgSrc: myProject4,
+      githubLink: "https://github.com/LuanDHV/To-Do-List",
       demoLink: "",
     },
   ];
