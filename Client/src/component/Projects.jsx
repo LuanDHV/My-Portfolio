@@ -49,7 +49,7 @@ export default function Projects() {
       description:
         "A To-Do List application built to enhance user experience and performance. The app allows users to efficiently manage their tasks with a clean and intuitive interface, featuring Light/Dark mode for a customizable user experience.",
       technology:
-        "TypeScript, React.js, RTK Query, Tailwind CSS, Node.js, Express.js.",
+        "TypeScript, React.js, RTK Query, Tailwind CSS, Node.js, Express.js. Framer motion.",
       year: "09/2024 - 09/2024",
       role: "Fullstack Developer",
       imgSrc: myProject4,
@@ -69,11 +69,10 @@ export default function Projects() {
       <div className="mx-auto my-10 w-4/5">
         <div className="xl:w-[600px]">
           <div className="bebas-neue-font text-5xl text-whiteColor xl:text-7xl">
-            Featured Projects
+            Projects
           </div>
           <div className="manrope-font mb-10 text-base text-textColor xl:text-lg">
-            Here are some of the selected projects that showcase my passion for
-            front-end development.
+            Here are some projects I've been working on recently
           </div>
         </div>
 
