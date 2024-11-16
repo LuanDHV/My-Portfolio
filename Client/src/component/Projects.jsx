@@ -1,47 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import myProject1 from "../assets/img/myProject1.png";
-import myProject2 from "../assets/img/myProject2.png";
-import myProject3 from "../assets/img/myProject3.png";
-import myProject4 from "../assets/img/myProject4.png";
+import riotgamesProject from "../assets/img/riotgamesProject.png";
+import todoProject from "../assets/img/todoProject.png";
+import elearningProject from "../assets/img/elearningProject.png";
+import ecommerceProject from "../assets/img/ecommerceProject.png";
+import myportfolioProject from "../assets/img/myportfolioProject.png";
 
 export default function Projects() {
   const projects = [
     {
-      title: "E-Learning Prep Clone",
+      title: "Riot Games Clone",
       description:
-        "A language learning web application that allows users to build personalized study pathways. The project aimed to provide an effective learning experience and convenient tools.",
+        "The Riot Games Clone project is a personal initiative to replicate the official Riot Games website, built to practice frontend and backend skills. The website showcases Riot Games titles such as League of Legends, TFT, Valorant...",
       technology:
-        "TypeScript, React.js, Next.js, NextUI, Tailwind CSS, Swiper, Node.js, Express.js, MongoDB, Clerk, ZaloPay Payment.",
-      year: "6/2024-9/2024",
+        "TypeScript, Next.js, NestJS, Prisma ORM, PostgreSQL, Swiper, RTK Query, Tailwind CSS.",
+      year: "00/2024 - Present",
       role: "Fullstack Developer",
-      imgSrc: myProject1,
-      githubLink: "https://github.com/LuanDHV/Prep-Clone-NextTS",
-      demoLink: "",
-    },
-    {
-      title: "Fashion E-commerce",
-      description:
-        "A fashion e-commerce web application using the MERN stack, following the MVC architecture, and integrating Redux Toolkit for state management. Additionally, I utilized Tailwind CSS for efficient styling and design.",
-      technology:
-        "React.js, Redux Toolkit, Tailwind CSS, Node.js, Express.js, MongoDB, Nodemailer.",
-      year: "1/2024 - 4/2024",
-      role: "Fullstack Developer",
-      imgSrc: myProject2,
-      githubLink: "https://github.com/LuanDHV/MERN-Stack-Project-Ecommerce",
-      demoLink: "",
-    },
-    {
-      title: "My Web Developer Portfolio",
-      description:
-        "A project built to introduce myself, my skills and completed projects. With a focus on simplicity, best user experience and aesthetics. Use appropriate colors and fonts to create a professional and easy to read workspace.",
-      technology:
-        "React.js, Tailwind CSS, Node.js, Express.js, Nodemailer, AOS.",
-      year: "04/2024 - 05/2024",
-      role: "Front-end Developer",
-      imgSrc: myProject3,
-      githubLink: "https://github.com/LuanDHV/My-Portfolio",
+      imgSrc: riotgamesProject,
+      githubLink: "https://github.com/LuanDHV/Riot-Games",
       demoLink: "",
     },
     {
@@ -52,9 +29,45 @@ export default function Projects() {
         "TypeScript, React.js, RTK Query, Tailwind CSS, Node.js, Express.js. Framer motion.",
       year: "09/2024 - 09/2024",
       role: "Fullstack Developer",
-      imgSrc: myProject4,
+      imgSrc: todoProject,
       githubLink: "https://github.com/LuanDHV/To-Do-List",
-      demoLink: "",
+      demoLink: "https://www.youtube.com/watch?v=kBKPrtXhRyw",
+    },
+    {
+      title: "E-Learning Prep Clone",
+      description:
+        "A language learning web application that allows users to build personalized learning paths. The project aims to provide an effective learning experience and convenient tools.",
+      technology:
+        "TypeScript, React.js, Next.js, NextUI, Tailwind CSS, Swiper, Node.js, Express.js, MongoDB, Clerk, ZaloPay Payment.",
+      year: "6/2024-9/2024",
+      role: "Fullstack Developer",
+      imgSrc: elearningProject,
+      githubLink: "https://github.com/LuanDHV/Prep-Clone-NextTS",
+      demoLink: "https://www.youtube.com/watch?v=q51vVldTYeE&t=26s",
+    },
+    {
+      title: "E-Commerce MERN Stack Project",
+      description:
+        "A fashion e-commerce web application using the MERN stack, following the MVC architecture, and integrating Redux Toolkit for state management. Additionally, I utilized Tailwind CSS for efficient styling and design.",
+      technology:
+        "React.js, Redux Toolkit, Tailwind CSS, Node.js, Express.js, MongoDB, Nodemailer.",
+      year: "1/2024 - 4/2024",
+      role: "Fullstack Developer",
+      imgSrc: ecommerceProject,
+      githubLink: "https://github.com/LuanDHV/MERN-Stack-Project-Ecommerce",
+      demoLink: "https://www.youtube.com/watch?v=BX1nILdTlLg",
+    },
+    {
+      title: "My Portfolio Project",
+      description:
+        "A project built to introduce myself, my skills and completed projects. With a focus on simplicity, best user experience and aesthetics. Use appropriate colors and fonts to create a professional and easy to read workspace.",
+      technology:
+        "React.js, Tailwind CSS, Node.js, Express.js, Nodemailer, AOS.",
+      year: "04/2024 - 05/2024",
+      role: "Front-end Developer",
+      imgSrc: myportfolioProject,
+      githubLink: "https://github.com/LuanDHV/My-Portfolio",
+      demoLink: "https://www.youtube.com/watch?v=V0vOiQOnCTc",
     },
   ];
 
@@ -85,7 +98,7 @@ export default function Projects() {
             <div className="mx-auto w-full rounded-lg bg-projectColor px-4 py-6">
               <img
                 src={project.imgSrc}
-                alt={`myProject${index + 1}`}
+                alt={project.imgSrc}
                 className="rounded-lg object-contain"
               />
             </div>

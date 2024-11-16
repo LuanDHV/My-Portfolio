@@ -24,7 +24,7 @@ export default function App() {
     });
   }, []);
 
-  // Khởi tạo AOS
+  // AOS
   useEffect(() => {
     AOS.init({
       duration: 1200,

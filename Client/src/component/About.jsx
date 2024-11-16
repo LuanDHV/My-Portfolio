@@ -31,15 +31,19 @@ export default function About() {
               expanding my skills.
             </span>
             <div className="my-10">
-              <button className="h-[45px] w-[140px] rounded-full bg-primaryColor duration-300 hover:opacity-75 xl:h-[55px] xl:w-[180px]">
+              <a
+                href="#contact"
+                className="h-[45px] w-[140px] rounded-full bg-primaryColor p-5 duration-300 hover:opacity-75 xl:h-[55px] xl:w-[180px]"
+              >
                 <span className="manrope-font text-sm font-bold uppercase text-black xl:text-base">
-                  <a href="#contact">Contact Me</a>
+                  Contact Me
                   <FontAwesomeIcon
                     icon={faUpRightFromSquare}
                     className="ml-2"
                   />
                 </span>
-              </button>
+              </a>
+
               <button
                 className="ml-4 h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
                 onClick={handleLinkedInClick}

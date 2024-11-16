@@ -25,10 +25,6 @@ export default function Contact() {
     window.open("https://github.com/LuanDHV", "_blank");
   };
 
-  const handleFacebookClick = () => {
-    window.open("https://www.facebook.com/naul.1406", "_blank");
-  };
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -41,7 +37,7 @@ export default function Contact() {
     e.preventDefault();
     try {
       await axios.post("http://localhost:8080/send-email", formData);
-      toast.success("Cảm ơn đã liên hệ");
+      toast.success("Thank you for contacting !");
       // console.log("Form data:", formData);
 
       // Reset form
@@ -110,15 +106,6 @@ export default function Contact() {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="text-primaryColor"
-                />
-              </button>
-              <button
-                className="h-12 w-12 rounded-full bg-buttonBlack duration-300 hover:opacity-75 xl:h-14 xl:w-14 xl:text-base"
-                onClick={handleFacebookClick}
-              >
-                <FontAwesomeIcon
-                  icon={faFacebook}
                   className="text-primaryColor"
                 />
               </button>
