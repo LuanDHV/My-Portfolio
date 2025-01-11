@@ -19,7 +19,7 @@ export default function Projects() {
       role: "Fullstack Developer",
       imgSrc: riotgamesProject,
       githubLink: "https://github.com/LuanDHV/Riot-Games",
-      demoLink: "",
+      demoLink: "https://www.youtube.com/watch?v=7Vibs2z5HA4",
     },
     {
       title: "To Do List",
